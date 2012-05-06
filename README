@@ -1,0 +1,13 @@
+blogger2octopress is some scripts for importing Blogger posts data into Octopress.
+
+Done:
+ + List all posts;
+ + Generate YAML Front Matter;
+
+Developing:
+ + List all comments
+
+Todo:
+ + Import from RSS
+ + Import from blogger_id
+ + Many more 
