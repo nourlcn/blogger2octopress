@@ -1,4 +1,4 @@
-__author__ = 'nourl'
+__author__ = 'nourlcn'
 
 class Blogger():
     def __init__(self,blogger_feedparser):

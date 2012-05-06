@@ -1,6 +1,5 @@
 #!encoding: utf-8
-
-__author__ = 'nourl'
+__author__ = 'nourlcn'
 
 import feedparser
 from Blogger import Blogger

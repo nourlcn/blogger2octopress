@@ -1,7 +1,5 @@
 #!encoding: utf-8
-
-__author__ = 'nourl'
-
+__author__ = 'nourlcn'
 
 class OctopressPost():
     def __init__(self):
