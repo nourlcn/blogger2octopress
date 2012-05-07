@@ -25,11 +25,14 @@ def convert(url, target):
             post.static_info(title,url,date,time,content,categories=tags)
 #            post.write_new_md_file(target)
             list = post.get_posts_list()
-            print list
-            pass
+            try:
+                print list
+            except Exception:
+                print list.encode('utf-8')
+
 #        print content
         count += 1
-#        if count == 2:
+#        if count == 50:
 #            break
 
 if __name__ == '__main__':

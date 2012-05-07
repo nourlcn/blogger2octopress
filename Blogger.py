@@ -22,8 +22,7 @@ class Blogger():
         count = 0
 #        print type(self.blogger.entries)
         for x in self.blogger.entries:
-
-            if x['id'].find('post') > 0:
+            if x['id'].find('post-') > 0:
                 flag = True
                 for link in x['links']:
                     if link['href'].find('showComment') > 0:
@@ -46,7 +45,7 @@ class Blogger():
     def get_entry_url(self,entry):
         result=""
         for x in entry['links']:
-            if x['type'] == u'text/html':
+            if x['rel'] == u'alternate':
 #                result = x['href'].split('/')[-1] # do not use base_url
 #                if result[-5:] == '.html':
 #                    result = result[:-5]

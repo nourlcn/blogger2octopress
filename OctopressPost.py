@@ -4,7 +4,6 @@ __author__ = 'nourlcn'
 class OctopressPost():
     def __init__(self):
         self.valid_post = False
-
     def static_info(self,title,url,date,time,content,categories=None,comment=None):
         self.title = title
         self.url = url
@@ -40,5 +39,5 @@ categories: %s
         """
         Format: <li><span>01 May 2012</span> &raquo; <a href="http://nourlcn.ownlinux.net">My Google Blogger</a></li>
         """
-        return """<li><span>%s</span> &raquo; <a href="%s">%s</a></li>""" % (self.date, self.url, self.title)
+        return """<li><span>%s</span> &raquo; <a href="%s">u'%s'</a></li>""" % (self.date, self.url, self.title)
 
